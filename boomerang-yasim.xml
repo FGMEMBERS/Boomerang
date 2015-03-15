@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Rutan Boomerang : 2009 BARANGER Emmanuel 
+
+     source       : http://en.wikipedia.org/wiki/Scaled_Composites_Boomerang
+
+     Envergure    : 11.19 m    (36.70 ft)
+     Longueur     :  9.34 m    (30.60 ft)
+     Hauteur      :  2.60 m    ( 8.56 ft)
+     Empty weight :       kg   ( 2370 lbs)
+     Speed Max    :       km/h (  264 kts)
+     Speed cruise :       km/h (  210 kts)
+     Moteur       : Lycoming TIO-360C1A6D, 210 hp
+                  : Lycoming TIO-360A1B, 200 hp
+-->
+
+<airplane mass="2370" >
+
+  <approach speed="68" aoa="12" fuel="0.2">
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.2"/>
+    <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
+    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="0.5"/>
+    <control-setting axis="/controls/engines/engine[1]/throttle" value="0.2"/>
+    <control-setting axis="/controls/engines/engine[1]/mixture" value="1.0"/>
+    <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="0.5"/>
+    <control-setting axis="/controls/flight/flaps" value="1.0"/>
+    <control-setting axis="/controls/gear/gear-down" value="1"/>
+  </approach>
+  
+  <cruise speed="210" alt="19000" fuel="0.8"> 
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.8"/>
+    <control-setting axis="/controls/engines/engine[0]/mixture" value="0.9"/>
+    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="0.5"/>
+    <control-setting axis="/controls/engines/engine[1]/throttle" value="0.8"/>
+    <control-setting axis="/controls/engines/engine[1]/mixture" value="0.9"/>
+    <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="0.5"/>
+    <control-setting axis="/controls/flight/elevator-trim" value="0.0"/>
+    <control-setting axis="/controls/flight/flaps" value="0.0"/>
+    <control-setting axis="/controls/gear/gear-down" value="0"/>
+  </cruise>
+
+  <cockpit x="1.838" y="0.442" z="0.194"/>
+
+  <!-- fuselage -->
+  <fuselage ax="3.974" ay="-0.725" az="-0.187" bx="-1.657" by="-0.725" bz="-0.187" width="1.344" taper="0.5" midpoint="0.5" idrag="0.1"/>
+
+  <!-- fuselage 2 (engine) -->
+  <fuselage ax="2.535"  ay="1.512" az="-0.296" bx="-4.553" by="-1.512" bz="-0.296" width="1.0" taper="0.3" idrag="0.4"/>
+
+  <wing x="0.892" y="-0.066" z="-0.222"
+        chord="1.102"
+        length="5.636"
+        taper="1.0"
+        dihedral="4"
+        sweep="-27"
+        camber="0.1">
+        <stall aoa="20" width="4" peak="1.5"/>
+	<flap0 start="0.05" end=".65" lift="1.9" drag="1.5"/>
+        <flap1 start="0.061" end="0.617" lift="1.3" drag="1.2"/>
+	<control-input axis="/controls/flight/flaps" control="FLAP0"/>
+        <control-input control="FLAP1" split="true" axis="/controls/flight/aileron"/>
+        <control-input control="FLAP1" split="true" axis="/controls/flight/aileron-trim"/>
+
+	<control-output control="FLAP0" prop="/surface-positions/flap-pos-norm"/>
+        <control-output control="FLAP1" prop="/surface-positions/left-aileron-pos-norm" side="left"/>
+        <control-output control="FLAP1" prop="/surface-positions/right-aileron-pos-norm" side="right"/>
+  </wing>
+
+  <hstab x="-4.132" y="-0.505" z="-0.123"
+         chord="0.741"
+         length="2"
+         taper="1">
+         <stall aoa="16" width="3" peak="1.5" />
+         <flap0 start="0.055" end="0.946" lift="1.4" drag="1.2"/>
+
+         <control-input control="FLAP0" axis="/controls/flight/elevator"/>
+         <control-input control="FLAP0" axis="/controls/flight/elevator-trim"/>
+
+         <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
+  </hstab>
+
+  <vstab x="-3.742" y="1.512" z="-0.085"
+	 chord="1.036"
+	 length="1.455"
+	 sweep="45"
+	 taper="0.42">
+	 <stall aoa="16" width="4" peak="1.5"/>
+	 <flap0 start="0" end="1" lift="1.3" drag="1.1"/>
+
+	 <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
+	 <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
+
+	 <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"/>
+  </vstab>
+
+  <vstab x="-3.742" y="-0.725" z="-0.085"
+	 chord="1.036"
+	 length="1.455"
+	 sweep="45"
+	 taper="0.42">
+	 <stall aoa="16" width="4" peak="1.5"/>
+	 <flap0 start="0" end="1" lift="1.3" drag="1.1"/>
+
+	 <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
+	 <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
+
+	 <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"/>
+  </vstab>
+
+  <!-- Engines   source            : http://en.wikipedia.org/wiki/Lycoming_O-360
+
+                 name              : Lycoming O-360
+                 type              : 4-cylinder air-cooled horizontally opposed aircraft piston engine
+                 power cruise      : 210 hp at 2,700 rpm at sea level
+                 weight            : 301 lb (137 kg)
+                 Displacement      : 361 in3 (5.9 L)
+                 Compression       : 8.5:1
+                 Propeller diameter: 1.9 m
+
+      Lycoming TIO-360C1A6D, 210 hp
+  -->
+  <propeller x="3.192" y="-0.725" z="-0.181"
+	     mass="301"
+	     moment="2.7075"
+	     radius="0.95"
+	     cruise-speed="210"
+	     cruise-rpm="2000"
+	     cruise-power="200"
+	     cruise-alt="5500">
+             <piston-engine eng-power="210"
+                            eng-rpm="2700"
+                            alt="5000"
+                            displacement="361"
+                            compression="8.5"/>
+	     <actionpt x="4.159" y="-0.725" z="-0.296"/>
+             <control-input axis="/controls/engines/engine[0]/propeller-pitch" control="ADVANCE"/>
+             <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
+             <control-input axis="/controls/engines/engine[0]/starter" control="STARTER"/>
+             <control-input axis="/controls/engines/engine[0]/magnetos" control="MAGNETOS"/>
+             <control-input axis="/controls/engines/engine[0]/mixture" control="MIXTURE"/>
+  </propeller>
+
+  <!-- Lycoming TIO-360A1B, 200 hp -->
+  <propeller x="1.928" y="1.512" z="-0.298"
+	     mass="301"
+	     moment="2.7075"
+	     radius="0.95"
+	     cruise-speed="210"
+	     cruise-rpm="2000"
+	     cruise-power="175"
+	     cruise-alt="5500">
+             <piston-engine eng-power="200"
+                            eng-rpm="2700"
+                            alt="5000"
+                            displacement="361"
+                            compression="8.5"/>
+	     <actionpt x="2.701" y="1.512" z="-0.296"/>
+             <control-input axis="/controls/engines/engine[1]/propeller-pitch" control="ADVANCE"/>
+             <control-input axis="/controls/engines/engine[1]/throttle" control="THROTTLE"/>
+             <control-input axis="/controls/engines/engine[1]/starter" control="STARTER"/>
+             <control-input axis="/controls/engines/engine[1]/magnetos" control="MAGNETOS"/>
+             <control-input axis="/controls/engines/engine[1]/mixture" control="MIXTURE"/>
+  </propeller>
+
+  <!-- nose -->
+  <gear x="3.113" y="-0.725" z="-1.319"
+        compression="0.3">
+	<control-input axis="/controls/flight/rudder" control="STEER" square="true" src0="-1.0" src1="1.0" dst0="-0.8" dst1="0.8"/>
+	<control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+
+	<control-speed control="EXTEND" transition-time="5"/>
+
+	<control-output control="EXTEND" prop="/gear/gear[0]/position-norm"/>
+  </gear>
+
+  <!-- left main -->
+  <gear x="0.850" y="1.512" z="-1.292"
+        compression="0.4">
+	<control-input axis="/controls/gear/brake-left" control="BRAKE"/>
+	<control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+	<control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+
+	<control-output control="EXTEND" prop="/gear/gear[1]/position-norm"/>
+  </gear>
+
+  <!-- right main -->
+  <gear x="0.792" y="-0.725" z="-1.292"
+        compression="0.4">
+	<control-input axis="/controls/gear/brake-left" control="BRAKE"/>
+	<control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+	<control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+
+	<control-output control="EXTEND" prop="/gear/gear[2]/position-norm"/>
+  </gear>
+
+  <!-- Fuel -->
+  <tank x="0.9" y="2.5" z="-0.2" capacity="503"/>
+  <tank x="0.9" y="-2.5" z="-0.2" capacity="503"/>
+
+  <!-- CG Théorique x=0.892 y=0 z=0.330 -0.714 -->
+  <ballast x="0.0" y="-0.21" z="0.0" mass="500"/>
+
+</airplane>

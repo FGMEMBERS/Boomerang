@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+
+    <status>devel</status>
+    <author>BARANGER Emmanuel</author>
+
+    <fuel-fraction>1.0</fuel-fraction>
+
+    <sound>
+      <audible>true</audible>
+      <path>Aircraft/Boomerang/Sounds/boomerang-sound.xml</path>
+    </sound>
+
+    <model>
+      <path>Aircraft/Boomerang/Models/boomerang.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <startup>
+      <splash-texture>Aircraft/Boomerang/boomerang-splash.png</splash-texture>
+    </startup>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+      </generic>
+    </multiplay>
+
+    <help>
+      <title>Rutan Boomerang</title>
+      <key>
+        <name>D</name>
+        <desc>Open/Close bombs bay</desc>
+      </key>
+      <key>
+        <name>e (temporary)</name>
+        <desc>Open/Close wings</desc>
+      </key>
+    </help>
+
+    <menubar include="Dialogs/boomerang-menu.xml"/>
+
+  </sim>
+
+  <engines>
+    <engine n="0">
+      <engine-num type="int">0</engine-num>
+      <running>true</running>
+    </engine>
+    <engine n="1">
+      <engine-num type="int">1</engine-num>
+      <running>true</running>
+    </engine>
+  </engines>
+
+  <consumables>
+    <fuel>
+      <tank n="0">
+        <tank-num type="int">0</tank-num>
+        <level-gal_us archive="y">2070</level-gal_us>
+      </tank>
+    </fuel>
+  </consumables>
+
+  <input>
+    <keyboard include="Nasal/boomerang-keyboard.xml"/>
+  </input>
+
+  <nasal>
+    <boomerang>
+      <file>Aircraft/Boomerang/Nasal/doors.nas</file>
+      <file>Aircraft/Boomerang/Nasal/liveries.nas</file>
+      <file>Aircraft/Boomerang/Nasal/light.nas</file>
+    </boomerang>
+  </nasal>
+
+</PropertyList>
+
