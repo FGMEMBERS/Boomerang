@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="Systems/boomerang-base.xml">
+
+  <sim>
+    
+    <description>Rutan Boomerang (Yasim)</description>
+    <author>Emmanuel BARANGER (3D/FDM)</author>
+    
+    <flight-model>yasim</flight-model>
+    <aero>Systems/boomerang-yasim</aero>
+    
+    <rating>
+      <FDM type="int">     2 </FDM>
+      <systems type="int"> 0 </systems>
+      <cockpit type="int"> 0 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
+    
+  </sim>
+
+</PropertyList>
+
