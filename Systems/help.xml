@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <title>Rutan Boomerang</title>
+  <line>______________________________________________</line>
+  <key>
+    <name>D</name>
+    <desc>Open/Close bombs bay</desc>
+  </key>
+  <key>
+    <name>e (temporary)</name>
+    <desc>Open/Close wings</desc>
+  </key>
+  
+</PropertyList>
