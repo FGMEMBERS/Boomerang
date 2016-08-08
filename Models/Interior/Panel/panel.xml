@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+    <object-name>panel2</object-name>
+    
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- AI -->
+  <model>
+    <path>Aircraft/Boomerang/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m>  0.00191 </x-m>
+      <y-m>  0.18063 </y-m>
+      <z-m> -0.01132 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- INF0 -->
+  <model>
+    <path>Aircraft/Boomerang/Models/Interior/Panel/Instruments/inf0/inf0.xml</path>
+    <offsets>
+      <x-m>  0.00191 </x-m>
+      <y-m>  0.27063 </y-m>
+      <z-m> -0.01132 </z-m>
+    </offsets>
+  </model>
+  
+  <!--INF1 -->
+  <model>
+    <path>Aircraft/Boomerang/Models/Interior/Panel/Instruments/inf1/inf1.xml</path>
+    <offsets>
+      <x-m>  0.00191 </x-m>
+      <y-m>  0.36063 </y-m>
+      <z-m> -0.01132 </z-m>
+    </offsets>
+  </model>
+  
+  <!--CRM2120 -->
+  <model>
+    <path>Aircraft/Boomerang/Models/Interior/Panel/Instruments/crm2120/crm2120.xml</path>
+    <offsets>
+      <x-m>  0.00191 </x-m>
+      <y-m>  0.27113 </y-m>
+      <z-m> -0.12082 </z-m>
+    </offsets>
+  </model>
+  
+  <!--TURN -->
+  <model>
+    <path>Aircraft/Boomerang/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m>  0.021 </x-m>
+      <y-m> -0.238 </y-m>
+      <z-m>  0.071 </z-m>
+      <heading-deg> 12 </heading-deg>
+    </offsets>
+  </model>
+  
+  <!--ASI -->
+  <model>
+    <path>Aircraft/Boomerang/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m> -0.00744 </x-m>
+      <y-m>  0.26800 </y-m>
+      <z-m>  0.07600 </z-m>
+    </offsets>
+  </model>
+  
+</PropertyList>
