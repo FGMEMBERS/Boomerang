@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <gear>
+    <brake-parking type="bool">1</brake-parking>
+  </gear>
+  
+  <electric>
+    <battery-switch>0</battery-switch>
+    <generator>0</generator>
+    <engines>
+      <engine n="0">
+        <fuel-pump>0</fuel-pump>
+      </engine>
+    </engines>
+  </electric>
+  
+</PropertyList>

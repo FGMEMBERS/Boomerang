@@ -1,6 +1,7 @@
 # =====
 # Doors
 # =====
+<<<<<<< HEAD
 
 Doors = {};
 
@@ -33,3 +34,7 @@ Doors.wingsexport = func {
 # objects must be here, otherwise local to init()
 doorsystem = Doors.new();
 
+=======
+crew       = aircraft.door.new("/sim/model/door-positions/crew", 2, 0 );
+passenger  = aircraft.door.new("/sim/model/door-positions/passenger", 2, 0 );
+>>>>>>> svn/master

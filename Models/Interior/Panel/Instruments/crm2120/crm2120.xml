@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList> 
+
+  <path>crm2120.ac</path>
+  
+  <animation>
+    <object-name>fond</object-name>
+    
+    <object-name>texte</object-name>
+    <object-name>oilp0</object-name>
+    <object-name>oilp1</object-name>
+    <object-name>oilt0</object-name>
+    <object-name>oilt1</object-name>
+    <object-name>amp0</object-name>
+    <object-name>amp1</object-name>
+
+    <object-name>fuelM0</object-name>
+    <object-name>fuelM1</object-name>
+    <object-name>fuelA0</object-name>
+    <object-name>fuelA1</object-name>
+    
+    <object-name>oilpsi0.10</object-name>
+    <object-name>oilpsi0.1</object-name>
+    <object-name>oilpsi1.10</object-name>
+    <object-name>oilpsi1.1</object-name>
+    
+    <object-name>oiltemp0.100</object-name>
+    <object-name>oiltemp0.10</object-name>
+    <object-name>oiltemp0.1</object-name>
+    <object-name>oiltemp1.100</object-name>
+    <object-name>oiltemp1.10</object-name>
+    <object-name>oiltemp1.1</object-name>
+    
+    <object-name>amp0.10</object-name>
+    <object-name>amp0.1</object-name>
+    <object-name>amp1.10</object-name>
+    <object-name>amp1.1</object-name>
+    
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>fond</object-name>
+    <emission>
+      <!-- <factor-prop>controls/lighting/luminosite-lights</factor-prop> -->
+      <blue>  0.2 </blue>
+      <red>   0.2 </red>
+      <green> 0.2 </green>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>texte</object-name>
+    <object-name>oilp0</object-name>
+    <object-name>oilp1</object-name>
+    <object-name>oilt0</object-name>
+    <object-name>oilt1</object-name>
+    <object-name>amp0</object-name>
+    <object-name>amp1</object-name>
+    
+    <object-name>fuelM0</object-name>
+    <object-name>fuelM1</object-name>
+    <object-name>fuelA0</object-name>
+    <object-name>fuelA1</object-name>
+    
+    <object-name>oilpsi0.10</object-name>
+    <object-name>oilpsi0.1</object-name>
+    <object-name>oilpsi1.10</object-name>
+    <object-name>oilpsi1.1</object-name>
+    
+    <object-name>oiltemp0.100</object-name>
+    <object-name>oiltemp0.10</object-name>
+    <object-name>oiltemp0.1</object-name>
+    <object-name>oiltemp1.100</object-name>
+    <object-name>oiltemp1.10</object-name>
+    <object-name>oiltemp1.1</object-name>
+    
+    <object-name>amp0.10</object-name>
+    <object-name>amp0.1</object-name>
+    <object-name>amp1.10</object-name>
+    <object-name>amp1.1</object-name>
+    <emission>
+      <!-- <factor-prop>controls/lighting/luminosite-lights</factor-prop> -->
+      <blue>  2 </blue>
+      <red>   2 </red>
+      <green> 2 </green>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>oilp0</object-name>
+    <property>engines/engine[0]/rpm</property>
+    <interpolation>
+      <entry><ind>    0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 2300 </ind><dep> 110 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> 0.00000 </x-m>
+      <y-m> 0.04461 </y-m>
+      <z-m> 0.02387 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>oilpsi0.10</object-name>
+    <property>engines/engine[0]/rpm</property>
+    <step> 10 </step>
+    <factor> 0.01 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>oilpsi0.1</object-name>
+    <property>engines/engine[0]/rpm</property>
+    <factor> 0.1 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>oilp1</object-name>
+    <property>engines/engine[1]/rpm</property>
+    <interpolation>
+      <entry><ind>    0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 2300 </ind><dep> 110 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> 0.00000 </x-m>
+      <y-m> 0.04461 </y-m>
+      <z-m> 0.02387 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>oilpsi1.10</object-name>
+    <property>engines/engine[1]/rpm</property>
+    <step> 10 </step>
+    <factor> 0.01 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>oilpsi1.1</object-name>
+    <property>engines/engine[1]/rpm</property>
+    <factor> 0.1 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>oilt0</object-name>
+    <property>engines/engine[0]/oil-temperature-degf</property>
+    <interpolation>
+      <entry><ind>   0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 150 </ind><dep> 110 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> 0.00000 </x-m>
+      <y-m> 0.08568 </y-m>
+      <z-m> 0.02387 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>oiltemp0.100</object-name>
+    <property>engines/engine[0]/oil-temperature-degf</property>
+    <step> 100 </step>
+    <factor> 0.001 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>oiltemp0.10</object-name>
+    <property>engines/engine[0]/oil-temperature-degf</property>
+    <step> 10 </step>
+    <factor> 0.01 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>oiltemp0.1</object-name>
+    <property>engines/engine[0]/oil-temperature-degf</property>
+    <factor> 0.1 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>oilt1</object-name>
+    <property>engines/engine[1]/oil-temperature-degf</property>
+    <interpolation>
+      <entry><ind>   0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 150 </ind><dep> 110 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> 0.00000 </x-m>
+      <y-m> 0.08568 </y-m>
+      <z-m> 0.02387 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>oiltemp1.100</object-name>
+    <property>engines/engine[1]/oil-temperature-degf</property>
+    <step> 100 </step>
+    <factor> 0.001 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>oiltemp1.10</object-name>
+    <property>engines/engine[1]/oil-temperature-degf</property>
+    <step> 10 </step>
+    <factor> 0.01 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>oiltemp1.1</object-name>
+    <property>engines/engine[1]/oil-temperature-degf</property>
+    <factor> 0.1 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>amp0</object-name>
+    <property>systems/electrical/amps</property>
+    <interpolation>
+      <entry><ind>  0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 60 </ind><dep> 110 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> 0.00000 </x-m>
+      <y-m> 0.04461 </y-m>
+      <z-m> 0.02387 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>amp0.10</object-name>
+    <property>systems/electrical/amps</property>
+    <step> 10 </step>
+    <factor> 0.01 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>amp0.1</object-name>
+    <property>systems/electrical/amps</property>
+    <factor> 0.1 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>amp1</object-name>
+    <property>systems/electrical/amps</property>
+    <interpolation>
+      <entry><ind>  0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 60 </ind><dep> 110 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> 0.00000 </x-m>
+      <y-m> 0.04461 </y-m>
+      <z-m> 0.02387 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+    
+  <animation>
+    <type>textranslate</type>
+    <object-name>amp1.10</object-name>
+    <property>systems/electrical/amps</property>
+    <step> 10 </step>
+    <factor> 0.01 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>amp1.1</object-name>
+    <property>systems/electrical/amps</property>
+    <factor> 0.1 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>scale</type>
+    <object-name>fuelM0</object-name>
+    <property>consumables/fuel/tank[0]/level-norm</property>
+    <x-factor> 0.00 </x-factor>
+    <y-factor> 0.00 </y-factor>
+    <z-factor> 207 </z-factor>
+    <x-offset> 1.00 </x-offset>
+    <y-offset> 1.00 </y-offset>
+    <z-offset> 1.00 </z-offset>
+    <center>
+      <x-m>  0.00000 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.01977 </z-m>
+    </center>
+  </animation>
+  
+  <animation>
+    <type>scale</type>
+    <object-name>fuelA0</object-name>
+    <property>consumables/fuel/tank[0]/level-norm</property>
+    <x-factor> 0.00 </x-factor>
+    <y-factor> 0.00 </y-factor>
+    <z-factor> 207 </z-factor>
+    <x-offset> 1.00 </x-offset>
+    <y-offset> 1.00 </y-offset>
+    <z-offset> 1.00 </z-offset>
+    <center>
+      <x-m>  0.00000 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.01977 </z-m>
+    </center>
+  </animation>
+  
+  <animation>
+    <type>scale</type>
+    <object-name>fuelA1</object-name>
+    <property>consumables/fuel/tank[1]/level-norm</property>
+    <x-factor> 0.00 </x-factor>
+    <y-factor> 0.00 </y-factor>
+    <z-factor> 207 </z-factor>
+    <x-offset> 1.00 </x-offset>
+    <y-offset> 1.00 </y-offset>
+    <z-offset> 1.00 </z-offset>
+    <center>
+      <x-m>  0.00000 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.01977 </z-m>
+    </center>
+  </animation>
+  
+  <animation>
+    <type>scale</type>
+    <object-name>fuelM1</object-name>
+    <property>consumables/fuel/tank[1]/level-norm</property>
+    <x-factor> 0.00 </x-factor>
+    <y-factor> 0.00 </y-factor>
+    <z-factor> 207 </z-factor>
+    <x-offset> 1.00 </x-offset>
+    <y-offset> 1.00 </y-offset>
+    <z-offset> 1.00 </z-offset>
+    <center>
+      <x-m>  0.00000 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.01977 </z-m>
+    </center>
+  </animation>
+  
+</PropertyList>
