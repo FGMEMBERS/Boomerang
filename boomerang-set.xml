@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-<?xml version="1.0" encoding="UTF-8"?>
-
-<!-- <PropertyList include="boomerang-jsbsim-cnf.xml"> -->
-<PropertyList include="boomerang-yasim-cnf.xml">
-
-  <sim>
-    <description>Rutan Boomerang (Yasim)</description>
-    <author>Emmanuel BARANGER (3D/FDM)</author>
-=======
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList include="Systems/boomerang-base.xml">
@@ -27,7 +17,6 @@
       <model type="int">   4 </model>
     </rating>
     
->>>>>>> svn/master
   </sim>
 
 </PropertyList>

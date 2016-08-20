@@ -1,18 +1,9 @@
-<<<<<<< HEAD
-<?xml version="1.0" encoding="UTF-8"?>
-
-<PropertyList>
-
-  <fx>
-
-=======
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
   
   <fx>
     
->>>>>>> svn/master
     <crank> 
       <name>engstart</name>
       <path>Aircraft/Boomerang/Sounds/start.wav</path>
@@ -30,11 +21,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </crank>
-<<<<<<< HEAD
-
-=======
     
->>>>>>> svn/master
     <crank> 
       <name>cough</name>
       <path>Aircraft/Boomerang/Sounds/coughing.wav</path>
@@ -52,11 +39,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </crank>
-<<<<<<< HEAD
-
-=======
     
->>>>>>> svn/master
     <engine> 
       <name>engineslowrun</name>
       <mode>looped</mode>
@@ -89,11 +72,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </engine>
-<<<<<<< HEAD
-
-=======
     
->>>>>>> svn/master
     <engine>
       <name>enginerun</name>
       <mode>looped</mode>
@@ -120,11 +99,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </engine>
-<<<<<<< HEAD
-
-=======
     
->>>>>>> svn/master
     <rumble>
       <name>rumble</name>
       <mode>looped</mode>
@@ -152,11 +127,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </rumble>
-<<<<<<< HEAD
-
-=======
     
->>>>>>> svn/master
     <splash>
       <name>splash</name>
       <mode>looped</mode>
@@ -193,11 +164,7 @@
       <reference-dist> 2.0 </reference-dist>
       <max-dist> 5.0 </max-dist>
     </splash>
-<<<<<<< HEAD
-
-=======
     
->>>>>>> svn/master
     <squeal>
       <name>squeal</name>
       <path>Sounds/squeal.wav</path>
@@ -236,11 +203,7 @@
       <reference-dist> 5.0 </reference-dist>
       <max-dist> 10.0 </max-dist>
     </squeal>
-<<<<<<< HEAD
-
-=======
     
->>>>>>> svn/master
     <flap>
       <name>flaps</name>
       <mode>in-transit</mode>
@@ -257,11 +220,7 @@
       <reference-dist> 2.5 </reference-dist>
       <max-dist> 5.0 </max-dist>
     </flap>
-<<<<<<< HEAD
-
-=======
     
->>>>>>> svn/master
     <wind>
       <name>wind</name>
       <mode>looped</mode>
@@ -293,11 +252,7 @@
       <max-dist> 2 </max-dist>
       <reference-dist> 1 </reference-dist>
     </wind>
-<<<<<<< HEAD
-
-=======
     
->>>>>>> svn/master
     <stall>
       <name>stall</name>
       <mode>looped</mode>
@@ -315,11 +270,7 @@
       <reference-dist> 2.0 </reference-dist>
       <max-dist> 4.0 </max-dist>
     </stall>
-<<<<<<< HEAD
-
-=======
     
->>>>>>> svn/master
     <!--                  Toggle Switches                  -->     
     <switch>
       <name>click on</name>
@@ -339,11 +290,7 @@
       <reference-dist> 2.0 </reference-dist>
       <max-dist> 4.0 </max-dist>
     </switch>
-<<<<<<< HEAD
-
-=======
     
->>>>>>> svn/master
     <switch>
       <name>click off</name>
       <mode>once</mode>
@@ -364,11 +311,7 @@
       <reference-dist> 2.0 </reference-dist>
       <max-dist> 4.0 </max-dist>
     </switch>
-<<<<<<< HEAD
-
-=======
     
->>>>>>> svn/master
     <rain>
       <name>rain</name>
       <mode>looped</mode>
@@ -394,13 +337,7 @@
       <reference-dist>2</reference-dist>
       <max-dist>4</max-dist>
     </rain>
-<<<<<<< HEAD
-
-</fx>
-
-=======
     
   </fx>
   
->>>>>>> svn/master
 </PropertyList>
