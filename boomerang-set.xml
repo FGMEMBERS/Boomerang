@@ -9,6 +9,18 @@
     
     <flight-model>yasim</flight-model>
     <aero>Systems/boomerang-yasim</aero>
+
+    <tags>
+      <tag>rutan</tag>
+      <tag>mid-wing</tag>
+      <tag>tricyle</tag>
+      <tag>retractable-gear</tag>
+      <tag>twin-engine</tag>
+      <tag>piston</tag>
+      <tag>ga</tag>
+      <tag>prototype</tag>
+      <tag>1990s</tag>
+    </tags>
     
     <rating>
       <FDM type="int">     2 </FDM>
